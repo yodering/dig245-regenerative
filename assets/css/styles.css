@@ -1,2 +1,37 @@
 
 /* css */
+
+@font-face {
+    font-family: "terminus";
+    src: url(terminus.ttf) format("truetype")
+}
+
+body {
+    background: rgb(209,51,51);
+    background: radial-gradient(circle, rgba(209,51,51,1) 0%, rgba(136,44,144,1) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: "terminus", serif;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(245, 222, 222);
+}
+
+.input-box {
+    background-color: black;
+    opacity: 35%;
+    width: 1008px;
+    height: 513px;
+    border-radius: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
