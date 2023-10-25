@@ -27,11 +27,26 @@ h1 {
 .input-box {
     background-color: black;
     opacity: 35%;
-    width: 1008px;
-    height: 513px;
+    width: 735px;
+    height: 331px;
     border-radius: 25px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+input {
+    font-family: "terminus", serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    background-color:white;
+    opacity: 80%;
+    color:white;
+    height:42px;
+    width:300px;
+    font-size: 24px;
 }
