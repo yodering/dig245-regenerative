@@ -24,6 +24,15 @@ h1 {
     color: rgb(245, 222, 222);
 }
 
+h2 {
+    font-family: "terminus", serif;
+    color: rgb(245, 222, 222);
+    font-size: 24px;
+    transform: translate(10%, 120%);
+    opacity: 100% !important;
+
+}
+
 .input-box {
     background-color: black;
     opacity: 35%;
@@ -39,13 +48,13 @@ h1 {
 input {
     font-family: "terminus", serif;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    border-radius: 25px;
+    border-radius: 30px;
     background-color:white;
     opacity: 80%;
-    color:white;
+    color:black;
     height:42px;
     width:300px;
     font-size: 24px;
