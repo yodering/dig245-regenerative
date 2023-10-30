@@ -17,9 +17,13 @@
             <br>
             Add details like "digital art" or "renaissance art"
         </h2>
-        <form>
-            <input placeholder="Enter Prompt...">
-        </form>
+        
+            <input id="user-prompt" placeholder="Enter Prompt...">
+            <button id="generate" class="generate">Go</button>
+            <div class="result">
+                <div id="loading">Generating...</div>
+                <div id="image-grid"></div>
+            </div>
     </div>
 
     <!-- load javascript after the page elements render -->

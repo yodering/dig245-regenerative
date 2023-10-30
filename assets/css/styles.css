@@ -59,3 +59,18 @@ input {
     width:300px;
     font-size: 24px;
 }
+
+.generate {
+    font-family: "terminus", serif;
+    position: fixed;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color:white;
+    opacity: 80%;
+    color:black;
+    height:47px;
+    width:42px;
+    font-size: 24px;
+}
