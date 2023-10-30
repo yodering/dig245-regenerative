@@ -1,10 +1,10 @@
 
 /* javascript */
 const apiKey = "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";
-const maxImages = 4;
+const maxImages = 6;
 let imageNumber = null;
 
-function randomNumber(min, max) {
+function randomNumberGen(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -18,7 +18,7 @@ async function generateImages(input) {
 
     for (let i = 0; i < maxImages; i++) {
         // generate a random number between 1 and 10000 and append it to the prompt
-        const randomNumber = randomNumber(1, 10000);
+        const randomNumber = randomNumberGen(1, 10000);
         const prompt = `${input} ${randomNumber}`;
         // add random number to prompt to create different results
         const response = await fetch(
@@ -44,7 +44,6 @@ async function generateImages(input) {
         const img = document.createElement("img");
         img.src = imgUrl;
         img.alt = `art-${i + 1}`;
-        img.onclick = () => downloadImage(imgUrl, i);
         document.getElementById("image-grid").appendChild(img);
     }
 
