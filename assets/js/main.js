@@ -8,8 +8,15 @@ function randomNumberGen(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Function to generate images
+//clear grid
+function clearImageGrid() {
+    const imageGrid = document.getElementById("image-grid");
+    imageGrid.innerHTML = "";
+}
+
+// function to generate images
 async function generateImages(input) {
+    clearImageGrid();
 
     const loading = document.getElementById("loading");
     loading.style.display = "block";
@@ -49,7 +56,7 @@ async function generateImages(input) {
 
     loading.style.display = "none";
 
-    selectedImageNumber = null; // Reset selected image number
+    selectedImageNumber = null; // reset selected image number
 }
 
 document.getElementById("generate").addEventListener('click', () => {
