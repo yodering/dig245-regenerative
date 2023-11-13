@@ -1,6 +1,6 @@
 
 /* javascript */
-const apiKey = "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";
+const string1 = "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";
 const maxImages = 6;
 let imageNumber = null;
 
@@ -27,7 +27,7 @@ async function generateImages(input) {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": `Bearer ${apiKey}`,
+                    "Authorization": `Bearer ${string1}`,
                 },
                 body: JSON.stringify({ inputs: prompt }),
             }
